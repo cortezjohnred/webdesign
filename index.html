@@ -1,40 +1,103 @@
-<!DOCTYPE html>
+<html>
+<link rel="shortcut icon" href="RBLOGO.png">
+<head>
+<title>Red's Bikes | Home</title>
+<style>
 
-<html lang="en">
-    <head>
-        <meta charset="UTF=8">
-        <meta name="viewport" content="width, initial-scale=1.0">
-        <title> JavaScript Calculator! </title>
-        <link rel="stylesheet" href="calculator.css">
-    </head>
+	.top {
+	border: 10px outset red;
+	background-color: lightyellow;    
+	text-align: center;
+}	
+	.mid {
+	border: 10px outset red;
+	background-color: transparent;    
+	text-align: center;
+}	
+	.fill {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden
+}
+      .button {
+        display: inline-block;
+        padding: 20px 50px;
+        text-align: center;
+        text-decoration: none;
+        color: #ffffff;
+        background-color: Red;
+        border-radius: 6px;
+        outline: none;
+        transition: 0.3s;
+      }
+      .button:hover {
+        background-color: #F4C524;
+      }
+	  body {
+	background-image: url("bgfade.png");
+	background-color: gray;
+	background-position: center;
+	background-size: cover
+	
+	}
 
-    <body>
-        <script src="calculator.js"> </script>
-        <div class="calcultor">
-            <input type="text" id="display" readonly>
-            <div class="buttons">
-                <button onclick="appendToDisplay('7')">7</button>
-                <button onclick="appendToDisplay('8')">8</button>
-                <button onclick="appendToDisplay('9')">9</button>
-                <button onclick="appendToDisplay('+')">+</button>
-                <button onclick="appendToDisplay('4')">4</button>
-                <button onclick="appendToDisplay('5')">5</button>
-                <button onclick="appendToDisplay('6')">6</button>
-                <button onclick="appendToDisplay('-')">-</button>
-                <button onclick="appendToDisplay('1')">1</button>
-                <button onclick="appendToDisplay('2')">2</button>
-                <button onclick="appendToDisplay('3')">3</button>
-                <button onclick="appendToDisplay('*')">*</button>
-                <button onclick="appendToDisplay('0')">0</button>
-                <button onclick="appendToDisplay('.')">.</button>
-                <button onclick="calculate()">=</button>
-                <button onclick="appendToDisplay('/')">/</button>
-                <button onclick="clearDisplay()">C</button>
-            </div class>
-            <div class="result">
-                <input type="text" id="resultDisplay" readonly>
-            </div>
-         </div class>
-        <script src="calculator.js"> </script>
-     </body>
+	.body-text {
+	text-align: center;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: white;
+}
+ .main-image {
+  background-image: url("home1.gif");
+  background-color: #cccccc;
+  height: 700px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
+
+}
+    </style>
+</head>
+<body bgcolor = "gray">
+
+<BR>
+
+<div class="top">
+<br>
+<a href="index.html"><img src="RBLOGO.png"height="20%" /></a>
+<marquee> WELCOME TO RED'S BIKES FEEL FREE TO BROWSE OUR PROODUCTS ON PRODUCTS PAGE, 
+IF YOU WANT TO INQUIRE OR HAVE QUESTIONS AND ORDER YOUR CHOSEN PRODUCT PLEASE FEEL FREE
+ TO CONTACT US AT 0921 202 8853</marquee>
+<div class="top">
+<a class="button" href="index.html">Home</a>
+<a class="button" href="products.html">Products</a>
+<a class="button" href="About.html">About Red's Bikes</a>
+<a class="button" href="contact.html">Contact Red's Bikes<br></a>
+<a class="button" href="cart.html">Cart<br></a>
+
+</div></div>
+<br><br><br><br><br><br><br><br>
+
+
+<div class="main-image">
+<div class="body-text">
+
+<h1 style="font-size:50px">WELCOME TO RED'S BIKES</h1>
+    <h3>Feel Free to Browse Our Products</h3>
+    <a class="button" href="products.html">Products</a>
+	<h3>If you have any questions free to contact us</h3>
+	<a class="button" href="contact.html">Contact Red's Bikes<br></a>
+	
+</div></div>
+
+
+
+
+
+</body>
 </html>
